@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double celsius;
+
+    // Vraag de temperatuur in graden Celsius
+    cout << "Voer de temperatuur in graden Celsius in: ";
+    cin >> celsius;
+
+    // Converteer naar Fahrenheit
+    double fahrenheit = (celsius * 9 / 5) + 32;
+
+    // Toon het resultaat
+    cout << celsius << " graden Celsius is gelijk aan " << fahrenheit << " graden Fahrenheit." << endl;
+
+    return 0;
+}
