@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int HUIDIG_JAAR = 2024;
+    int geboortejaar;
+
+    // Vraag naar de geboortedatum
+    cout << "Wat is je geboortejaar? ";
+    cin >> geboortejaar;
+
+    // Bereken en toon de leeftijd
+    int leeftijd = HUIDIG_JAAR - geboortejaar;
+    cout << "Je bent " << leeftijd << " jaar oud." << endl;
+
+    return 0;
+}
