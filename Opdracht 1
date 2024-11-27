@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double getal1, getal2;
+
+    // Vraag om twee getallen
+    cout << "Voer het eerste getal in: ";
+    cin >> getal1;
+
+    cout << "Voer het tweede getal in: ";
+    cin >> getal2;
+
+    // Bereken en toon de som
+    double som = getal1 + getal2;
+    cout << "De som van " << getal1 << " en " << getal2 << " is " << som << "." << endl;
+
+    return 0;
+}
