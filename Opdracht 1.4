@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double getal1, getal2;
+    char bewerking;
+
+    // Vraag om twee getallen
+    cout << "Voer het eerste getal in: ";
+    cin >> getal1;
+
+    cout << "Voer het tweede getal in: ";
+    cin >> getal2;
+
+    // Vraag om de bewerking
+    cout << "Voer de bewerking in (+, -, *, /): ";
+    cin >> bewerking;
+
+    // Bereken het resultaat op basis van de gekozen bewerking
+    double resultaat;
+    if (bewerking == '+') {
+        resultaat = getal1 + getal2;
+    } else if (bewerking == '-') {
+        resultaat = getal1 - getal2;
+    } else if (bewerking == '*') {
+        resultaat = getal1 * getal2;
+    } else if (bewerking == '/') {
+        if (getal2 != 0) {
+            resultaat = getal1 / getal2;
+        } else {
+            cout << "Delen door nul is niet toegestaan." << endl;
+            return 1;
+        }
+    } else {
+        cout << "Ongeldige bewerking." << endl;
+        return 1;
+    }
+
+    // Toon het resultaat
+    cout << "Het resultaat is: " << resultaat << endl;
+
+    return 0;
+}
